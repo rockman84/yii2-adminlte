@@ -21,8 +21,10 @@ class AdminLteAsset extends \yii\web\AssetBundle
     
     public $publishOptions = [
         'only' => [
-            'dist/*',
-            'plugins/*',
+            'dist/css/*',
+            'dist/js/*',
+            'plugins/fontawesome-free/css/*',
+            'plugins/fontawesome-free/webfonts/*',
         ]
     ];
 }
