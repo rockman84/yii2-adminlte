@@ -1,0 +1,23 @@
+{
+    "name": "sky/yii2-adminlte",
+    "description": "Yii2 AdminLte",
+    "type": "extension",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+                "name": "Hansen Wong",
+                "email": "huanghanzen@gmail.com",
+                "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "yiisoft/yii2": "~2.0.0",
+        "almasaeed2010/adminlte": "~3.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "sky\\adminlte\\": ""
+      }
+    }
+}

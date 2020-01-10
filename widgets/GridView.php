@@ -22,8 +22,8 @@ class GridView extends \yii\grid\GridView
         $class = ArrayHelper::remove($pager, 'class', LinkPager::className());
         $pager['pagination'] = $pagination;
         $pager['view'] = $this->getView();
-
-        return Html::tag('div', $class::widget($pager), ['class' => 'card-footer']);
+        $footer = $class::widget($pager);
+        return $footer ? Html::tag('div', $footer , ['class' => 'card-footer']) : '';
     }
     
     public function renderItems() {
