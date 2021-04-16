@@ -31,6 +31,6 @@ class GridView extends \yii\grid\GridView
     }
     
     public function renderSummary() {
-        return Html::tag('div', parent::renderSummary(), ['class' => 'm-3']);
+        return Html::tag('div', parent::renderSummary(), ['class' => 'card-header']);
     }
 }

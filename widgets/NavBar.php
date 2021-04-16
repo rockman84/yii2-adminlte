@@ -113,7 +113,7 @@ class NavBar extends Widget
     {
         parent::init();
         if (!isset($this->options['class']) || empty($this->options['class'])) {
-            Html::addCssClass($this->options, ['widget' => 'main-header', 'navbar', 'navbar-static-top', 'navbar-expand navbar-white navbar-dark bg-dark']);
+            Html::addCssClass($this->options, ['widget' => 'main-header', 'navbar', 'navbar-static-top', 'navbar-expand navbar-dark bg-night-sky']);
         } else {
             Html::addCssClass($this->options, ['widget' => 'navbar']);
         }

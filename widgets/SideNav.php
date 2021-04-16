@@ -53,7 +53,6 @@ class SideNav extends \yii\bootstrap4\Nav
         } elseif ($this->activateItems && $active) {
             Html::addCssClass($linkOptions, 'active');
         }
-        
         $label = Html::tag('i', '', ['class' => 'nav-icon ' . $iconCls]) . ' ' . Html::tag('p', $label);
 
         return Html::tag('li', Html::a($label, $url, $linkOptions) . $items, $options);

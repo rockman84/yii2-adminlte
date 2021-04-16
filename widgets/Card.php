@@ -33,7 +33,7 @@ class Card extends \yii\base\Widget
     public $maximize = true;
     
     public function run() {
-        Html::addCssClass($this->options, 'card');
+        Html::addCssClass($this->options, ['card']);
         return Html::tag('div', $this->header() . $this->body() . $this->footer(), $this->options);
     }
     
